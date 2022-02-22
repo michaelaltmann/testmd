@@ -1,6 +1,5 @@
 ```mermaid
 flowchart LR
-nav_bar --> {home hypotheses select_final_hypotheses recommendations plan risks reports export_csv search}
 home --> |set_site| home 
 
 hypotheses --> |def_ready| hypotheses 
@@ -36,7 +35,6 @@ risk --> |done/delete| recommendation_plan
 
 risks --> |edit| risk  
 
-search --> {hypothesis recommendation milestone risk }
 
 export_csv --> |download| export_csv 
 reports --> |new| report 
