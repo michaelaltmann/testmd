@@ -1,44 +1,44 @@
 ```mermaid
 flowchart LR
-  nav_bar -> {home hypotheses select_final_hypotheses recommendations plan risks reports export_csv search}
-  home -> |set_site| home 
-  
-  hypotheses -> |def_ready| hypotheses 
-  hypotheses -> |questions| hypotheses 
-  hypotheses -> |set_phase| hypotheses 
-  hypotheses -> |new| hypothesis  
-  hypotheses ->|edit| hypothesis 
-  hypothesis -> |autosave| hypothesis  
-  hypothesis -> |done/delete| hypotheses 
-  
-  select_final_hypotheses -> |autosave|  select_final_hypothese
-  
-  recommendations -> |def_ready| recommendations 
-  recommendations -> |questions| recommendations 
-  recommendations -> |new| recommendation 
-  recommendations -> |edit| recommendation  
-  recommendation -> |autosave| recommendation 
-  recommendation -> |done/delete|  recommendations
+nav_bar -> {home hypotheses select_final_hypotheses recommendations plan risks reports export_csv search}
+home -> |set_site| home 
 
-  plan -> |set_phase| plan 
-  plan -> |prioritize|  plan 
-  plan -> |save| plan 
+hypotheses -> |def_ready| hypotheses 
+hypotheses -> |questions| hypotheses 
+hypotheses -> |set_phase| hypotheses 
+hypotheses -> |new| hypothesis  
+hypotheses ->|edit| hypothesis 
+hypothesis -> |autosave| hypothesis  
+hypothesis -> |done/delete| hypotheses 
 
-  plan -> |edit| recommendation_plan  
+select_final_hypotheses -> |autosave|  select_final_hypothese
 
-  recommendation_plan -> |new/edit| milestone  
-  milestone -> |autosave|  milestone  
-  milestone -> |done/delete| recommendation_plan  
+recommendations -> |def_ready| recommendations 
+recommendations -> |questions| recommendations 
+recommendations -> |new| recommendation 
+recommendations -> |edit| recommendation  
+recommendation -> |autosave| recommendation 
+recommendation -> |done/delete|  recommendations
 
-  recommendation_plan -> |new| risk 
-  risk -> |autosave| risk  
-  risk -> |done/delete| recommendation_plan  
+plan -> |set_phase| plan 
+plan -> |prioritize|  plan 
+plan -> |save| plan 
 
-  risks -> |edit| risk  
+plan -> |edit| recommendation_plan  
 
-  search -> {hypothesis recommendation milestone risk }
+recommendation_plan -> |new/edit| milestone  
+milestone -> |autosave|  milestone  
+milestone -> |done/delete| recommendation_plan  
 
-  export_csv -> |download| export_csv 
-  reports -> |new| report 
-  report -> |submit| reports 
+recommendation_plan -> |new| risk 
+risk -> |autosave| risk  
+risk -> |done/delete| recommendation_plan  
+
+risks -> |edit| risk  
+
+search -> {hypothesis recommendation milestone risk }
+
+export_csv -> |download| export_csv 
+reports -> |new| report 
+report -> |submit| reports 
 ```
