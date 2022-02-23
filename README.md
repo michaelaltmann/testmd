@@ -12,6 +12,12 @@ subgraph nav_pages
    export_csv
    search
 end
+subgraph search_results 
+ hypothesis
+ recommendation
+ milestone
+ risk 
+end
 home -->|set_site| home 
 
 hypotheses -->|def_ready| hypotheses 
@@ -51,5 +57,8 @@ risks -->|edit| risk
 export_csv -->|download| export_csv 
 reports -->|new| report 
 report -->|submit| reports 
+
+ search -> search_results
+
 ```
 
