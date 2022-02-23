@@ -58,7 +58,7 @@ export_csv -->|download| export_csv
 reports -->|new| report 
 report -->|submit| reports 
 
- search -> search_results
+ search --> search_results
 
 ```
 
