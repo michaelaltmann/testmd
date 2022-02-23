@@ -1,5 +1,6 @@
 ```mermaid
 flowchart LR
+nav_bar --> {home hypotheses select_final_hypotheses recommendations plan risks reports export_csv search}
 home -->|set_site| home 
 
 hypotheses -->|def_ready| hypotheses 
