@@ -8,7 +8,7 @@ hypotheses -->|set_phase| hypotheses
 hypotheses -->|new| hypothesis  
 hypotheses -->|edit| hypothesis 
 hypothesis -->|autosave| hypothesis  
-hypothesis -->|done_delete| hypotheses
+hypothesis -->|done/delete| hypotheses
 
 select_final_hypotheses -->|autosave| select_final_hypotheses
 
