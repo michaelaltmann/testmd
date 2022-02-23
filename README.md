@@ -10,12 +10,12 @@ hypotheses -->|edit| hypothesis
 hypothesis -->|autosave| hypothesis  
 hypothesis -->|done_delete| hypotheses
 
-select_final_hypotheses -->|autosave|  select_final_hypothese
+select_final_hypotheses -->|autosave| select_final_hypotheses
 
 recommendations -->|def_ready| recommendations 
 recommendations -->|questions| recommendations 
 recommendations -->|new| recommendation 
 recommendations -->|edit| recommendation  
 recommendation -->|autosave| recommendation 
-recommendation -->|done_delete|  recommendations
+recommendation -->|done_delete| recommendations
 ```
