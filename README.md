@@ -1,6 +1,8 @@
 ```mermaid
 flowchart LR
 nav_bar --> nav_pages
+search --> search_results
+
 subgraph nav_pages
    home
    hypotheses
@@ -12,7 +14,7 @@ subgraph nav_pages
    export_csv
    search
 end
-subgraph search_results 
+subgraph search_results
  hypothesis
  recommendation
  milestone
@@ -58,7 +60,6 @@ export_csv -->|download| export_csv
 reports -->|new| report 
 report -->|submit| reports 
 
- search --> search_results
 
 ```
 
